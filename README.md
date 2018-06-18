@@ -10,44 +10,7 @@ Because you're a legit programmer, you know the most efficient way is to navigat
 
 As a refresher, here's a list of commands to help you with this task:
 
-`pwd` print working directory - shows you where you are
-
-`cd ..` change your current directory to the parent (one above it)
-
-`ls` list all files and directories
-
-`mv` move a file. The `mv` command needs two extra pieces of information, the name of the file you're moving and where you want to move it. Let's say I want to move a file named `me.txt` back a level, I would enter `mv me.txt ..`.
-
-Remember, it's always helpful to know where you are in your directory tree in relation to where you want to go. Keep that in mind as you write out your command-line paths!
-
-### Get working!
-
-Click the "Open" button to start this lab. In your IDE terminal, run `bundle` to make sure the lab is setup.
-
-Run `learn` in the terminal to check your progress! `spec/pet_spec.rb` contains code that will check your placement of the animals to see if they are in the right place or not. This file will also print the result to the terminal screen, so you can keep track of which animals you've brought home.
-
-Use the commands we've learned to move the animals to their right places. When everything prints green, you've successfully organized all the Animal Sanctuary's adorable animal pics!
-<br>
-
-### Let's Move One File Together
-
-Notice that the `painting-elephants.jpg` image is located in `(lab root) > cats > indoor > back-alley`. But really, the painting elephant should go inside of `(lab root) > elephants > painters`. 
-
-We can move this elephant image by entering in terminal from the main directory of this project...
-
-```bash
-cd cats
-cd indoor
-cd back-alley
-mv painting-elephants.jpg ..
-cd ..
-mv painting-elephants.jpg ..
-cd ..
-mv painting-elephants.jpg ..
-cd ..
-mv painting-elephants.jpg elephants
-cd elephants
-mv painting-elephants.jpg painters
+`pwd` print working directory - shows you where yrs
 ```
 
 BUT WOW that's a lot of steps. Programming is all about making things simple, so there has to be a better way. In fact, we can actually combine all the steps into one short line:
